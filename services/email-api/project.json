@@ -1,0 +1,19 @@
+{
+  "name": "email-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "services/email-api/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/services/email-api",
+        "main": "services/email-api/src/meta.ts",
+        "tsConfig": "services/email-api/tsconfig.lib.json",
+        "assets": ["services/email-api/*.md"]
+      }
+    }
+  }
+}
